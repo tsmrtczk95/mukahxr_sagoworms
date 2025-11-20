@@ -9,7 +9,17 @@
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
-    <model-viewer src="3D - sagoworms.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls tone-mapping="neutral" poster="poster.jpeg" style="background-color:#ffffff;" shadow-intensity="1.8" shadow-softness="0.7" exposure="0.7" camera-orbit="-240.3deg 76.52deg 2.32m" field-of-view="30deg">
+    <model-viewer src="3D - sagoworms.glb" 
+      ar ar-modes="scene-viewer webxr quick-look" 
+      camera-controls tone-mapping="neutral" 
+      poster="poster.jpeg"      
+      shadow-intensity="1.8" 
+      shadow-softness="0.7" 
+      exposure="0.7" 
+      camera-orbit="-240.3deg 76.52deg 2.32m" 
+      field-of-view="30deg"
+      scale="0.5 0.5 0.5"> <!--scale down model in AR-->
+      <!-- style="background-color:#ffffff;"> -->
       
       <button class="Hotspot" 
         slot="hotspot-1" 
