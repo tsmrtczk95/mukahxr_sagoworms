@@ -17,7 +17,7 @@
         data-normal="0.9741169993022115m -0.18244195431878774m -0.13345787715529148m" 
         data-visibility-attribute="visible"
         onclick="playAudio('audio-headfact')">
-        //onclick="playHeadFact()">        
+        <!--onclick="playHeadFact()"-->        
         <div class="HotspotAnnotation">Head</div>
       </button>
       
@@ -27,7 +27,7 @@
         data-normal="0.814620645825804m -0.4439093309713777m -0.37327966629712633m" 
         data-visibility-attribute="visible"
         onclick="playAudio('audio-bodyfact')">
-        //onclick="playBodyFact()">
+        <!--onclick="playBodyFact()"-->
         <div class="HotspotAnnotation">Body</div>
       </button>
       
@@ -37,7 +37,7 @@
         data-normal="0.29634791947072975m 0.9475100349937987m -0.12001101704185399m" 
         data-visibility-attribute="visible"
         onclick="playAudio('audio-sagoworm')">
-        //onclick="playSagoWormAudio()">
+        <!--onclick="playSagoWormAudio()"-->
         <div class="HotspotAnnotation">Sago Worm</div>
       </button>
       //
@@ -67,7 +67,7 @@
       </script> -->
       
       <script>
-        function playHotspotAudio(audioId) { // Get all audio elements
+        function playAudio(audioId) { // Get all audio elements
           const audios = document.querySelectorAll("audio");
           
           audios.forEach(audio => {
