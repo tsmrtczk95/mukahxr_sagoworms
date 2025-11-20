@@ -14,9 +14,26 @@
           <div class="HotspotAnnotation">Head</div>
       </button><button class="Hotspot" slot="hotspot-2" data-position="0.34751829157029235m -0.17690007914782557m -0.14416603247349902m" data-normal="0.814620645825804m -0.4439093309713777m -0.37327966629712633m" data-visibility-attribute="visible">
           <div class="HotspotAnnotation">Body</div>
-      </button><button class="Hotspot" slot="hotspot-3" data-position="-0.012808543677866435m 0.18472340353697228m -0.2468127026616318m" data-normal="0.29634791947072975m 0.9475100349937987m -0.12001101704185399m" data-visibility-attribute="visible">
-          <div class="HotspotAnnotation">Sago Worm</div>
       </button>
+      
+      <button class="Hotspot" 
+        slot="hotspot-3" 
+        data-position="-0.012808543677866435m 0.18472340353697228m -0.2468127026616318m" 
+        data-normal="0.29634791947072975m 0.9475100349937987m -0.12001101704185399m" 
+        data-visibility-attribute="visible" 
+        onclick="playSagoWormAudio()">
+        <div class="HotspotAnnotation">Sago Worm</div>
+      </button>
+      //
+      <audio id="audio-sagoworm" src="audio_files/about_sagoworms.mp3"></audio>
+      <script>
+        function playSagoWormAudio() {
+          const audio = document.getElementById('audio-sagoworm');
+          audio.currentTime = 0;     // restart if already played
+          audio.play(); }
+      </script>
+      //
+      
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
