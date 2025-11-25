@@ -16,7 +16,7 @@
         padding: 8px 12px; background: rgba(0,0,0,0.7); color: white; border: none; border-radius: 6px; cursor: pointer; }
       .HotspotAnnotation {
         background: rgba(0,0,0,0.7); padding: 6px 10px; border-radius: 6px; color: white; } </style>
-    <div style="position:relative; width:100%; height:100%px;">
+    <div style="position:relative; width:100%; height:100vh; overflow: hidden;">
       <div class="ui-buttons">
         <button onclick="window.location.href='https://sites.google.com/poliku.edu.my/mukahxplore/3d-experiences?read_current=1'">Homepage</button>
         <button onclick="openYouTube()">YouTube</button>
@@ -26,7 +26,7 @@
         <!--<button onclick="window.open('https://wikipedia.org', '_blank')">Wikipedia</button>-->
       </div>
     <!-- <model-viewer> HTML element -->
-    <model-viewer src="3D - sagoworms.glb" 
+    <model-viewer src="3D - sagoworms.glb"
       ar ar-modes="scene-viewer webxr quick-look" 
       camera-controls tone-mapping="neutral" 
       poster="poster.png"      
@@ -34,7 +34,8 @@
       shadow-softness="0.7" 
       exposure="0.7" 
       camera-orbit="-240.3deg 76.52deg 2.32m" 
-      field-of-view="30deg">
+      field-of-view="30deg"
+      style="width: 100%; height: 100%;">
       <!-- style="background-color:#ffffff;"> -->
       <!-- HOTSPOTS -->
       <button class="Hotspot" 
