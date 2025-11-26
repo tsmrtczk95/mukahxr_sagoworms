@@ -177,9 +177,9 @@
         setActiveTab( article === "article1" ? "tab1" :
                      article === "article2" ? "tab2" : "tab3");
         const textBox = document.getElementById("infoText"); textBox.textContent = "Loading...";
-        const links = { article1: "https://raw.githubusercontent.com/tsmrtczk95/mukahxr_sagoworms/blob/0118ceccb4359caeda7ca2ea18b0f97c09f29cea/articles/01_sagoworm.txt",
-                       article2: "https://raw.githubusercontent.com/tsmrtczk95/mukahxr_sagoworms/blob/0118ceccb4359caeda7ca2ea18b0f97c09f29cea/articles/02_nutrition.txt",
-                       article3: "https://raw.githubusercontent.com/tsmrtczk95/mukahxr_sagoworms/blob/0118ceccb4359caeda7ca2ea18b0f97c09f29cea/articles/03_howsagowormeaten.txt" };
+        const links = { article1: "https://raw.githubusercontent.com/tsmrtczk95/mukahxr_sagoworms/blob/patch-0.2/articles/01_sagoworm.txt",
+                       article2: "https://raw.githubusercontent.com/tsmrtczk95/mukahxr_sagoworms/blob/patch-0.2/articles/02_nutrition.txt",
+                       article3: "https://raw.githubusercontent.com/tsmrtczk95/mukahxr_sagoworms/blob/patch-0.2/articles/03_howsagowormeaten.txt" };
         fetch(links[article])
           .then(response => response.text())
           .then(data => textBox.textContent = data)
