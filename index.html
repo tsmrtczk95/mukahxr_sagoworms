@@ -115,7 +115,15 @@
         </div>
       </model-viewer>
     </main>
-    <!-- Loads <model-viewer> for browsers: -->
+<!-- SLIDE UP CONTENT PANEL. -->
+    <div id="contentPanel" class="content-panel" aria-hidden="true">
+      <div id="contentHeader" class="content-header">
+        <span id="panelTitle">Content</span>
+        <button id="closePanel" aria-label="Close panel">✕</button>
+      </div>
+      <div id="contentBody" class="content-body"></div>
+    </div>    
+<!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <script type="module" src="./components/ui.js"></script>
     <script type="module" src="./script.js"></script>
