@@ -21,10 +21,10 @@ const audioList = [
   {label:'Worm Body', src:'./assets/audio/about_body.mp3'},
   {label:'Head of Sago Worm', src:'./assets/audio/about_head.mp3'}];
 const videoList = [{label:'Demo Video', src:'./assets/video/video1.mp4'}];
-const articleList = [
+/* const articleList = [
   {label:'The Sago Worm: From Pest to Prized Delicacy', src:'./assets/articles/01_sagoworm.txt'},
   {label:'Sago Worm Nutrition: A Powerhouse of Protein and Fat', src:'./assets/articles/02_nutrition.txt'},
-  {label:'A Taste of the Tropics: How Sago Worms are Eaten', src:'./assets/articles/03_howsagowormeaten.txt'}];
+  {label:'A Taste of the Tropics: How Sago Worms are Eaten', src:'./assets/articles/03_howsagowormeaten.txt'}]; */
 
 document.querySelectorAll('[data-open]').forEach(btn=>{
   btn.addEventListener('click', async (ev)=>{
@@ -37,7 +37,7 @@ document.querySelectorAll('[data-open]').forEach(btn=>{
     }
     else if(type==='articles') {
       // await loadArticleText(articleList);// toggle example: load text file; you can create a list UI instead
-      loadArticleText(articleList);// toggle example: load text file; you can create a list UI instead
+      loadArticleText('.assets/articles/articles.txt','Sago Worms: Delicacy of Melanau People');// toggle example: load text file; you can create a list UI instead
     }
     else if(type==='quiz') {
       await loadQuiz('./assets/quiz/quiz1.json');
