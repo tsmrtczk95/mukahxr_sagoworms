@@ -69,7 +69,10 @@
           data-normal="0.29634791947072975m 0.9475100349937987m -0.12001101704185399m" 
           data-visibility-attribute="visible"
           data-audio="./assets/audio/about_sagoworms.mp3"
-          onclick="playAudio(this)">
+          onclick="playAudio(this)"
+          onclick="openGallery(
+              ['assets/images/poster.png'],
+              'Sago Worm')">
           <div class="HotspotAnnotation">Sago Worm</div>
         </button>
 <!-- HOTSPOTS END -->
@@ -129,6 +132,7 @@
 <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <script type="module" src="./components/ui.js"></script>
+    <script src="./components/spot-img.js"></script>
     <script type="module" src="./script.js"></script>
   </body>
 </html>
